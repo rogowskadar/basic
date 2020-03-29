@@ -1,11 +1,10 @@
-fun main(args: Array<String>){
+fun main() {
 
-    val naszaStala:Int=10
-    var naszaLiczba:Int
+    val naszaStala =10
 
     println("Wprowadź liczbę. Sprawdzę czy jest większa lub równa $naszaStala. Jeśli jest mniejsza, sprawdzę podzielność przez 2.")
-    naszaLiczba = readLine()!!.toInt()
-    var wynik: Int = naszaLiczba%naszaStala
+    val naszaLiczba:Int = readLine()!!.toInt()
+    val wynik: Int = naszaLiczba%naszaStala
 
     println(wynik)
 
