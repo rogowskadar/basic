@@ -1,6 +1,6 @@
 import java.io.File
 
-fun wczytajPlik(): List<String> {
+private fun wczytajPlik(): List<String> {
 
     val sciezka = "document.txt" // sciezka dostępu do pliku, ścieżka pośrednia, ścieżka bezpośrednia: "~Users/..."
     val plik = File(sciezka)
