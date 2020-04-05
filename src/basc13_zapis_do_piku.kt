@@ -8,31 +8,31 @@ private fun wczytajPlik(): List<String> {
     return plik.readLines()
 }
 
-fun wpiszDoTablicy(liczby: List<String>) : ArrayList<Int> {
+fun wpiszDoTablicy(liczby: List<String>): ArrayList<Int> {
     var tablica: ArrayList<Int> = arrayListOf()
 
-    for (i in liczby){
+    for (i in liczby) {
         tablica.add(i.toInt())
     }
     return tablica
 }
 
-fun policzSumeLiczb(dane: ArrayList<Int>) : Int {
+fun policzSumeLiczb(dane: ArrayList<Int>): Int {
     var sumaLiczb = 0
 
-    for (i in dane){
+    for (i in dane) {
         sumaLiczb += i
     }
     return sumaLiczb
 }
 
-fun zapiszDoPliku(wynik: Int){
+fun zapiszDoPliku(wynik: Int) {
     val sciezka = "wynik.txt"
     var plik = File(sciezka)
     plik.writeText(wynik.toString(), Charset.defaultCharset())
 }
 
-fun main(){
+fun main() {
     /*
     kilka sposobów tworzenia tablic
     var tablicaInt: IntArray = intArrayOf(1,2,3,4,5,6)
